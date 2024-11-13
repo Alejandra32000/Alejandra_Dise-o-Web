@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instituto Miguel de Cervantes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- la cabeza --> 
+    <header class="header text-center py-3">
+        <div class="container">
+            <div class="row">
+                <img src="imagene/xd_1.webp" alt="Logo del Instituto" class="logo">
+                <h1>Bienvenidos</h1>
+                <p>Instituto Miguel de Cervantes</p>
+                <img src="imagene/LOGO_1.webp" alt="Imagen de bienvenida" class="welcome-image">
+            </div>
+        </div>
+    </header>
+
+    <!-- parte de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-sticky">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Acerca de</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Contactos</a></li>
+            </ul>
+        </div>
+        <!--CARRUSEL-->  
+    </nav>
+
+    <section class="container-fluid mt-5">
+        <div class="new border rounded shadow p-4">
+            <div class="row">
+                <div class="news-image col-lg-2 mb-12 col-sm-12">
+                  <img src="imagene/w.webp" class="not">
+                </div>
+                <div id="carouselExampleCaptions" class="carousel slide col-lg-12 mb-12 " data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+                    </div>
+                    
+                    <div class="carousel-inner col-lg-12 mb-12">
+                        <div class="carousel-item active">
+                            <img src="imagene/alum_1.webp" class="d-block w-100" alt="Noticia 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagene/fi_1 (1).webp" class="d-block w-100" alt="Noticia 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagene/2_1.webp" class="d-block w-100" alt="Noticia 3">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>               
+            </div>
+           
+
+
+            <!-- testo de noticia -->
+            <article class="mt-4">
+                <h3>Noticias Relevantes</h3>
+                <p>
+                    Esta mañana, los estudiantes del Instituto Miguel de Cervantes, ubicado en el Distrito 3 de Managua, participaron en una experiencia educativa única gracias a una colaboración entre el Ministerio de Educación (MINED) y la Cinemateca Nacional. 
+                    Se proyectaron cortometrajes que promovieron la creatividad y el pensamiento crítico entre los jóvenes. La delegada del MINED, Erika Calero, destacó la importancia de estas actividades para fomentar la imaginación y valores culturales.
+                </p>
+                <p>
+                    Erika Calero, delegada del MINED en el Distrito 3, describió el programa como innovador, porque permite desarrollar la imaginación en los estudiantes a partir de cortometrajes culturales y mensajes de superación.
+                </p>
+            </article>                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row direction">
+            <h2 class="text-center">Información del instituto</h2>
+            <img src="imagene/direccion.webp" class="image-fluid">
+            <p>
+                El Colegio Miguel de Cervantes en Nicaragua, también conocido como Instituto Nacional Miguel de Cervantes Saavedra, es una institución educativa ubicada en Managua. Su dirección está en la Colonia H y M del Bocay, detrás del Centro Comercial Zumen, en la ciudad de Managua. Este colegio es conocido por su enfoque en la educación secundaria, ofreciendo un plan académico sólido y completo para sus estudiantes.
+            </p>
+            <p>
+              La ubicación precisa del colegio es en las coordenadas 12.12414°N de latitud y -86.29633°O de longitud. Está cerca de varios puntos de referencia importantes en Managua, como el Estadio Nacional de Fútbol y la Reserva Natural Laguna de Tiscapa.                
+            </p>
+        </div>
+    </section>
+
+    <section id="Contactos" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="Telefono" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu numero de telefono">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 btenviar">Enviar</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- final -->
+    <footer class="footer bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <img src="imagene/cat_001.webp" alt="" class="footer-logo mb-3">
+            <p>Comunícate con nosotros al (505) 2601950</p>
+            <div>
+                <a href="#" class="text-white me-3">Política de cookies</a>
+                <a href="#" class="text-white">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
